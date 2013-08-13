@@ -1,4 +1,3 @@
-package Practice_Easy;
 
 /**
  * My first solution in Python yielded TLE the same solution in Java yielded AC

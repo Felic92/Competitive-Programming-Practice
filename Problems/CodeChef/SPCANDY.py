@@ -1,4 +1,5 @@
 #August Long 2013
+#Splitting Candies
 #http://www.codechef.com/AUG13/problems/SPCANDY/
 
 cases = int(raw_input())
