@@ -22,6 +22,7 @@ def main():
             if(d[k] != []):
                 total+= d[k][-1]
                 d[k] = d[k][:-1]
+                
         print total
                   
 main()
