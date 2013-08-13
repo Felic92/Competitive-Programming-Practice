@@ -1,3 +1,8 @@
+//Code Chef
+//Hotel Bytelandia
+//http://www.codechef.com/problems/HOTEL
+
+
 #include<stdio.h>
 
 int main()
