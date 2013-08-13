@@ -1,5 +1,5 @@
 #August Long 2013
-#Little Elephant and Lemonaid
+#Hello Hello
 #http://www.codechef.com/AUG13/problems/HELLO
 
 def main():
