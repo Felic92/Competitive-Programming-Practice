@@ -1,6 +1,6 @@
 #August Long 2013
 #Little Elephant and Lemonaid
-#http://www.codechef.com/AUG13/problems/SPCANDY/
+#http://www.codechef.com/AUG13/problems/LELEMON/
 
 def main():
     
