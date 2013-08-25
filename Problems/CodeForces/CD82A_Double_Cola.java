@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class CD82A_Double_Cola {
+public class CF82A_Double_Cola {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
