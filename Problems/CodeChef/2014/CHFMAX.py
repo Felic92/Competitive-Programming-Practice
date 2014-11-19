@@ -14,6 +14,9 @@
 # the sub() which allows us to replace all occurances of a pattern with another pattern 
 # which is in this case "?" 
  
+#Difficulty: Easy
+#Tags: Adhoc, Greedy, String Processing
+#Problem Link: http://www.codechef.com/CDSM2014/problems/CHFMAX
 
 import re
 
@@ -42,3 +45,8 @@ for i in range(cases):
 	lowest_char = chr(min(contenders))
 
 	print re.sub(lowest_char,"?",seq)
+
+
+
+
+
