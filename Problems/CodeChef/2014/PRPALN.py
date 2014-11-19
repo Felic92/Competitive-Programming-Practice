@@ -21,6 +21,10 @@
 # large cases. I will try to implement some conditions to catch some special
 # cases if this doesn't work I may have to re think my strategy. 
 
+#Difficulty: Easy
+#Tags: Greedy
+#Problem Link: http://www.codechef.com/NOV14/problems/PRPALN
+
 
 def main():
 	
@@ -57,6 +61,8 @@ def solve(s):
 
 # If recursion depth is the problem an iterative approach might be the answer
 # I am getting tried....something in here may very well be incorrect.
+
+#Ha! it did work
 def solve2(s):
 
 	result = "NO"
