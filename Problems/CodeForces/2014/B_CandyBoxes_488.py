@@ -1,3 +1,4 @@
+from __future__ import division
 
 def main():
 	
@@ -8,13 +9,10 @@ def main():
 		candy = int(raw_input())
 		candyList.append(candy)
 
-	#Sorting required for downstream preconditions to hold
-	candyList = sorted(candyList)	
-
 	#We will take different approaches based on value of numCandies
 	solution = solve(numCandies,candyList)
 
-	if(solution[0] == "NO"):
+	if(len(solution) == 0 or solution[0] == "NO"):
 		print "NO"
 	else:
 		for element in solution:
@@ -25,18 +23,30 @@ def solve(numCandies,cList):
 	result = []
 
 	if(numCandies == 0):
-		result.extend(("YES",1,1,3,3))
+		result = ["YES",1,1,3,3]
 
 	elif(numCandies == 1):
-		result.extend(("YES",cList[0],cList[0],3*cList[0],3*cList[0]))
+		result = ["YES",cList[0],3*cList[0],3*cList[0]]
 
 	elif(numCandies == 2):
-		#TODO
-		print "yes"
+		x = min(cList)
+		y = max(cList)
 
+		if(3*x < y):
+			result.append("NO")
+		else:
+			#Yarr! Here be sorcery!
+			result = ["YES", 4*x-y, 3*x]
+	
 	elif(numCandies == 3):
-		#TODO
-		print "yes"
+
+		cList.append(1)
+
+		for x in range(1,501):
+			cList[-1] = x
+			if(check(cList) == "YES"):
+				result = ["YES",x]
+				break
 
 	else:
 		result.append(check(cList))
@@ -61,13 +71,12 @@ def mean(cList):
 #Returns the median of a 4 element list
 #Precondition: Input list must be sorted
 def median(cList):
+	cList = sorted(cList)
 	return (cList[1]+cList[2])/2
 
 # Returns the range of the input list
-# Precondition: Input list MUST be sorted
-# Alternative for unsorted list [ return max(list) - min(list) ]  
 def numericalRange(cList):
-	return cList[-1] - cList[0]
+	return max(cList) - min(cList)
 
 
 main()
